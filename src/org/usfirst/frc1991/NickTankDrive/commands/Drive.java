@@ -51,6 +51,7 @@ public class Drive extends Command {
     	double rt = 0;
     	if(x < 0){
     		lt=x;
+    		lt = lt * -1;
     	}
     	if(x > 0){
     		rt=x;

@@ -45,7 +45,7 @@ public class TankDrive extends Command {
     protected void execute() {
     	double leftspeed = Robot.oi.joy.getRawAxis(1);
     	// find out what the y is for the second joystick on the controller, then replace 0 here.
-    	double rightspeed = Robot.oi.joy.getRawAxis(0);
+    	double rightspeed = Robot.oi.joy.getRawAxis(5);
     	RobotMap.drivetrainCANTalon1.set(leftspeed);
     	RobotMap.drivetrainCANTalon2.set(leftspeed);
     	RobotMap.drivetrainCANTalon3.set(leftspeed);
